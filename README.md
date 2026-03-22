@@ -1,6 +1,6 @@
 # Shopee Regional Brand & Revenue Analytics (PH, MY, TH)
 
-## 📌 Project Overview
+## Project Overview
 This project addresses the challenge of fragmented e-commerce data in the Southeast Asian (SEA) beauty market. Using raw listing data from Shopee across the **Philippines (PH)**, **Malaysia (MY)**, and **Thailand (TH)**, I built a pipeline to clean and analyze brand performance across different regulatory and linguistic environments.
 
 ### Key Objectives:
@@ -10,7 +10,7 @@ This project addresses the challenge of fragmented e-commerce data in the Southe
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Language:** Python 3.x
 * **Libraries:** `Pandas` (Data manipulation), `RapidFuzz` (Fuzzy matching), `Unidecode` (Linguistic normalization)
 * **CLI Tooling:** `Argparse`
@@ -18,7 +18,7 @@ This project addresses the challenge of fragmented e-commerce data in the Southe
 
 ---
 
-## 🌟 Feature Highlights
+## Features
 
 ### 1. Scalable Fuzzy Matching Logic
 Utilized `RapidFuzz` to implement a multi-view scoring system that handles the "noise" of marketplace listings:
@@ -33,7 +33,7 @@ The pipeline (`aggregate_country_basic.py`) automates the calculation of **Reven
 
 ---
 
-## 📂 Development Setup & Usage Guide
+## Development Setup & Usage Guide
 
 Follow these steps to configure your local environment and process raw marketplace data.
 
@@ -81,7 +81,7 @@ python scripts/aggregate_country_basic.py \
 
 ---
 
-## 🛡️ Troubleshooting & Data Integrity
+## Troubleshooting
 
 ### **Handling "No Brand" Results**
 If a large volume of data falls into `unmatched_audit.csv`, follow these steps:
